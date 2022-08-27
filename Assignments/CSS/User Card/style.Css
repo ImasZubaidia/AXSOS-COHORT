@@ -1,0 +1,91 @@
+.container{
+    position: absolute;
+    left: 500px;
+    top: 72px;
+}
+.box1{
+    background-color: rgba(23,162,184,255);
+    width: 624px;
+    height: 84px;
+}
+.box2{
+    background-color: rgba(255,255,255,255);
+    width: 620px;
+    height: 300px;
+    border-style: solid;
+    border-color:rgba(210,210,210,255);
+    color: black;
+    font-family: monospace;
+    font-size: 12px;
+    font-style: normal;
+}
+.info{
+    position: absolute;
+    left: 22px;
+    top: 104px;
+    padding: 10px;
+}
+.career{
+    width: max-content;
+}
+
+.user img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.location img{
+    height: 21px;
+    width: 12px;
+    position: absolute;
+    left: 10px;
+    top: 90px;
+}
+.location p{
+    font-family: cursive;
+    font-size: 18px;
+    position: absolute;
+    left: 32px;
+    top: 70px;
+}
+
+.worktext p{
+    font-family: cursive;
+    font-size: 17px;
+    position: absolute;
+    left: 0px;
+    top: -24px;
+}
+
+.career{
+    position: absolute;
+    left: 20px;
+    top: 147px;
+}
+.desc p{
+    font-family: cursive;
+    font-size: 16px;
+
+}
+
+.info h1{
+    font-family: cursive;
+    font-size: 31px;
+}
+.link a{
+    font-size: 16px;
+    position: absolute;
+    left: 33px;
+    top: 252px;
+}
+.link img{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 10px;
+    top: 251px;
+}
+
+    
