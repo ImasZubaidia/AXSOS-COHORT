@@ -1,0 +1,32 @@
+.row{
+    color: rgb(249, 245, 245);
+    width: 80%px;
+    height: 40px;
+    display: flex;
+    margin: 30px;
+    padding: 25px; 
+}
+.col{
+    background-color:rgba(95,159,160,255);
+    width: 30%;
+    height: 40px;
+    display:flex;
+    margin: 15px;
+    padding: 25px;
+}
+.col-2 {
+    background-color: rgba(95,159,160,255); 
+    width: 40%;
+    height: 40px;
+    display:flex;
+    margin: 15px;
+    padding: 25px;
+}
+.col-3 {
+    background-color:rgba(95,159,160,255); 
+    width:40% ;
+    height: 40px;
+    display:flex;
+    margin: 15px;
+    padding: 25px;
+}
