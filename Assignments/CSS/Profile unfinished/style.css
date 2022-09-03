@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: rgba(243,243,243,255);
+font-family: sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 79px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-title {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 255);
+}
+
+.nav-links {
+width: 30%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 255);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+button {
+  background-color: rgba(23, 162, 184, 255);
+  color: white;
+  border: 2px solid black;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 10px 24px;
+  text-align: center;
+  box-shadow: 5px 5px black;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+
+}
+
+.col-2{
+    flex: 2;
+    margin-right: 20px;
+}
+
+.userbox{
+    background-color:rgba(255,255,255,255) ;
+    border: 2px solid rgba(194,194,194,255) ;
+    margin-bottom: 20px;
+}
+
+.box1-header {
+    padding: 18px;
+    background-color: rgba(23,162,184,255);
+}
+
+.box1-body h1, h2, h3, p{
+    padding: 20px;
+    margin: 20px 0px ;
+}
+
+.userbox .box1-header{
+    height: 85px;
+    margin-bottom: 70px;
+    display: block;
+}
+
+.box1-header img{
+    width: 150px;
+    height: 150px;
+}
+.box1-body img{
+    height: 18px;
+    width: 15px;
+}
+
+.box2{
+    background-color:rgba(255,255,255,255) ;
+    border: 2px solid rgba(194,194,194,255) 
+    margin-bottom: 20px;
+}
+
+.box2-header {
+    padding: 5px;
+    color: aliceblue;
+    background-color:#222222
+    
+}
