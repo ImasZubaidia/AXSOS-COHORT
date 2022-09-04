@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 1166px;
+    background-color: #2b5b84;
+}
+
+img {
+    margin-left: 35px;
+    width: 323px;
+}
+
+#searchBoxArea {
+    padding: 5px;
+    text-align: right;
+    margin-left: 453px;
+    display: inline-block;
+}
+
+header p {
+    color: whitesmoke;
+    font-size: 10pt;
+    padding: 5px;
+    text-align: center;
+}
+
+header p a {
+    color: rgb(212, 178, 0);
+}
+
+header span {
+    color: black;
+}
+
+#search {
+    padding: 10px 20px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    text-align: center;
+    width: 332px;
+    height: 67px;
+    box-shadow: rgb(0, 0, 0) 1.95px 1.95px 2.6px;
+}
+
+#searchBox {
+    text-align: center;
+    border: 2px solid rgb(154, 154, 154);
+    width: 190px;
+    height: 40px;
+}
+
+#go {
+    border: 2px solid rgb(154, 154, 154);
+    background-color: rgb(38, 81, 117);
+    color: whitesmoke;
+    width: 45px;
+    height: 35px;
+    vertical-align: -9px;
+}
+
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul{
+    background: linear-gradient(90deg, rgba(70, 126, 171,1) 0%, rgba(75, 128, 171, 1) 50%, rgba(70, 126, 171,1) 100%);
+    width: 1022px;
+    height: 55px;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: rgb(0 0 0) 1.95px 1.95px 2.6px;
+}
+
+nav li {
+    font-size: 18pt;
+    display: inline-block;
+    padding-right: 48px;
+}
+
+#points {
+    padding: 20px;
+    display: inline-block;
+    width: 350px;
+}
+
+#points li {
+    list-style-type: none;
+    padding: 8px;
+    text-align: center;
+}
+
+#points li:before {
+    /* \00BB to type >> and \0020 to type space */
+    content: "\00BB \0020"; 
+    color: rgb(212, 178, 0);
+}
+
+#points a {
+    color: whitesmoke;
+}
+
+
+#descParagraph {
+    padding: 10px;
+    display: inline-block;
+    width: 720px;
+}
+
+#descParagraph p {
+    text-align: center;
+    font-size: 11pt;
+    color: whitesmoke;
+    padding: 8px;
+}
+
+#descParagraph li {
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 14pt;
+    font-style: italic;
+    color: rgb(212, 178, 0);
+}
+
+#whiteSection {
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 4px solid #1a3852;
+}
+
+.area {
+    padding: 10px;
+    margin: 10px;
+    width: 345px;
+    display: inline-block;
+    border-top: 4px solid rgb(117, 168, 211);
+}
+
+.area h4, .area p, .area li {
+    padding: 5px;
+    text-align: center;
+}
+
+.area li {
+    width: 220px;
+    list-style: square;
+    font-size: 10pt;
+}
+
+.area p {
+    font-size: 10pt;
+}
+
+.area span {
+    color: rgb(123, 172, 213);}
+
+
+footer a {
+    margin: 20px;
+    text-align: center;
+    color: rgb(137, 186, 227);
+}
+
+#bottomBar {
+    padding-top: 85px;
+    text-align: center;
+    height: 125px;
+}
+footer p {
+    padding: 5px;
+    text-align: center;
+    color: rgb(137, 186, 227);
+    font-size: 6pt;
+}
