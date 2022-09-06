@@ -1,0 +1,90 @@
+* {
+  font-family: cursive;
+}
+.container {
+  margin: auto;
+  width: 818px;
+  height: 742px;
+}
+
+header h1 {
+  padding: 15px;
+  background-color: black;
+  width: 795px;
+  height: 60px;
+  font-size: 40px;
+  font-style: normal;
+  color: aliceblue;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.box {
+  border: 4px solid;
+  padding: 22px;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+}
+
+.right {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 35px;
+}
+
+.name {
+}
+
+.like-section {
+  display: flex;
+
+  flex-direction: row;
+
+  gap: 17px;
+
+  height: 43px;
+
+  align-items: baseline;
+}
+.top-part {
+  display: flex;
+  flex-direction: row;
+  gap: 177px;
+  height: 45px;
+  align-items: baseline;
+}
+
+.side-box {
+  border: 4px solid;
+  padding: 22px;
+}
+
+.like-section p {
+  font-size: 21px;
+}
+
+.like {
+  background-color: #ffd966;
+  width: 85px;
+  height: 45px;
+  font-size: 25px;
+}
