@@ -1,0 +1,151 @@
+* {
+    margin: 0px auto;
+    padding:0px;
+    font-family: cursive;
+   
+}
+nav {
+    height: 89px;
+    background-color: #9fc5f8;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+
+font-size: 32px;
+
+color: white;
+}
+.nav-links{
+
+display: flex;
+
+flex-direction: row;
+}
+nav ul{
+    color: #ffffff;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+
+nav li {
+    font-size: 25pt;
+    list-style-type: none;
+}
+
+#city-temp-bar{
+    width: 1085px;
+    display: flex;
+    align-items: center;
+    gap: 371px;
+    border-bottom: 4px solid black;
+    margin: 10px auto;
+}
+
+#tempretureUnit{
+    display: flex;
+    gap: 10px;
+}
+
+#tempretureUnit p{
+    font-size: 24px;
+}
+
+select{
+    width: 80px;
+    height:41px;
+    font-size: 22px;
+    border: 3px solid;
+}
+
+.dayName{
+    width: 1082px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.weather-box{
+    background-color: #eee;
+    height: 422px;
+    width: 241px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-box img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.weather-box ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.weather-box h3{
+    font-size: 25px
+}
+.weather-box h2{
+    font-size: 35px
+}
+.weather-box li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#tempMax1, #tempMax2, #tempMax3,#tempMax4{
+    color:#cf2a27;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+#tempLowest4,#tempLowest3,#tempLowest1,#tempLowest2{
+    font-weight: bold;
+    font-size: 20pt;
+    color: #327ce3;
+}
+
+#cookie-section {
+    display: flex;
+    background-color: #eeeeee;
+    align-items: center;
+    border: 4px solid black;
+    position: fixed;
+    bottom: -5px;
+    left: calc(50% - 550px);
+    width: 1060px;
+    height: 130px;
+    padding: 9px;
+}
+
+#cookie-section img{
+ width: 93px;
+ height: 89px;
+}
+#cookie-section p{
+     font-size: 20px;
+}
+
+.midrow h4{
+    font-size: 31px;
+    margin: 6px;
+}
+#cookie-section button{
+    background-color: #9fc5f8;
+    border: 2px solid black;
+    box-shadow: 2px 3px black;
+    height: 53px;
+    width: 142px;
+    margin-top: 20px;
+    font-size: 18px;
+}
