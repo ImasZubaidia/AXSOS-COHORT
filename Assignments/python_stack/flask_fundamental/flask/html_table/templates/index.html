@@ -22,7 +22,7 @@
             <tr>
                 <td scope="row">{{user['first_name']}}</td>
                 <td scope="row">{{user['last_name']}}</td>
-                <td scope="row">{{user['full_name']}}</td>
+                <td scope="row">{{user['first_name']+' '+user['last_name']}}</td>
             </tr>
             {% endfor %} 
         </tbody>
