@@ -1,0 +1,31 @@
+*{
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.message p{
+    border: 3px solid black;
+    width:177px ;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 44px;
+}
+.time{
+    border: 3px solid black;
+    font-family: cursive;
+    color: black;
+    width: 511px;
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
