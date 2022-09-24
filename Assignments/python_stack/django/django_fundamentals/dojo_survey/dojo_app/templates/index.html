@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+
+</head>
+<body>
+<form action='/result' method='post'>
+    {% csrf_token %}
+    <div class="name">
+    <p>Your Name:</p> <input type='text' name='name'>
+    </div>
+    <div class="location">
+    <label for="dojo_location">Dojo Location:</label>
+    <select name="dojo_location" id="Location">
+        <option value="San Jose">San Jose</option>
+    </select>
+    </div>
+    <div class="language">
+    <label for="Favorite Language">Favorite Language:</label>
+    <select name="favorite_language" id="Language">
+        <option value="python">python</option>
+    </select>
+    </div>
+    <div class="comment">
+    <p>Comment (optional):</p> <br>
+    <input type='text' name='comment'>
+    </div>
+    <button type='submit'>Button</button>
+</form>
+</body>
+</html>

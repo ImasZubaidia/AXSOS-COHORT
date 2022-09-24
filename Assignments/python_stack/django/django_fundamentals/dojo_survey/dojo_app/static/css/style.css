@@ -1,0 +1,84 @@
+
+*{
+    margin: auto;
+    font-family: cursive;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 4px solid black;
+        width: 615px;
+        height: 480px;
+        margin-top: 41px;
+    }
+    
+    
+    .name {
+        display: flex;
+        flex-direction: row;
+        /* text-align: center; */
+        gap: 50px;
+        justify-content: space-between;
+    }
+    
+    .name input{
+        width: 283px;
+        height: 38px;
+        border: 4px solid black;
+    
+    }
+    
+    .location{
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .location select{
+        width: 282px;
+        height: 38px;
+        border: 4px solid black;
+    
+    }
+    
+    .language{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .language select{
+        width: 282px;
+        height: 38px;
+        border: 4px solid black;
+    }
+    
+    .comment{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: left; */
+        /* gap: 70px; */
+        /* align-items: flex-start; */
+        /* align-content: baseline; */
+    }
+    .comment p{
+
+    }
+
+    .comment input{
+        width: 400px;
+        height: 117px;
+        border: 4px solid black;
+    }
+    
+    button{
+        background-color: #76a5af;
+        border: 3px solid black;
+        box-shadow: 3px 3px black;
+        margin-right: 30px;
+        color: azure;
+    }
+
