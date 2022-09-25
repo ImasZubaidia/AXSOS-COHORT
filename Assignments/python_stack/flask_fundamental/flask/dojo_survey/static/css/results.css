@@ -1,0 +1,28 @@
+*{
+    font-family: cursive;
+    margin: auto 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: 4px solid black;
+    width: 615px;
+    height: 480px;
+    margin: auto;
+}
+
+
+button{
+    background-color: #76a5af;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    margin-right: 65px;
+    margin-left: 400px;
+    margin-top: 100px;
+    color: azure;
+    width: 90px;
+    height: 40px;
+}
+

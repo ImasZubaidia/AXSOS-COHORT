@@ -1,0 +1,46 @@
+*{
+    margin: auto;
+    font-family: cursive;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid black;
+    width: 615px;
+    height: 480px;
+    margin-top: 41px;
+} 
+form{
+    text-align: right;
+}
+
+select{
+    width: 206px;
+}
+
+button{
+    background-color: #76a5af;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    margin-right: 30px;
+    color: azure;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.commentarea{
+    width: 400px;
+    height: 117px;
+}
+
+
+.commentsarea{
+    width: 400px;
+    height: 117px;
+}
