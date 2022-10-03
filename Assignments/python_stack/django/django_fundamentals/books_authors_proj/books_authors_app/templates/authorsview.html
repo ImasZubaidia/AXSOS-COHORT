@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Authors Project</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>{{authors_DB.first_name}} {{authors_DB.last_name}}</h1>
+    <h3>ID: {{authors_DB.id}}</h3>
+    <p>Notes</p>
+    <textarea name="" id="" cols="30" rows="10">{{authors_DB.notes}}</textarea>
+    <br>
+    <br>
+    <h3>Books</h3>
+    <ul>
+        {% for book in authors_DB.books.all %}
+        <li>{{book.title}}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <br>
+    <form action="/bookstoadd/{{authors_DB.id}}" method="POST">
+    {% csrf_token %}
+        <select name="bookinfo" id="">
+            {% for books in books_add %}
+            <option value="{{books.id}}">{{books.title}}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Add</button>
+    </form> 
+</body>
+</html>

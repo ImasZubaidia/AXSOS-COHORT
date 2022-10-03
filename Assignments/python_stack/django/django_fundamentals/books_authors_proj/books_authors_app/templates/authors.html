@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Authors Project</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="top-section">
+        <div>
+            <h1>Add a Author</h1>
+            <form action="authors/add" method="POST">
+                {% csrf_token %}
+                <p>First Name<input type="text" name="fname" id=""></p>
+                <p>Last Name<input type="text" name="lname" id=""></p>
+                <label for="">Notes</label><br>
+                <textarea name="note" id="" cols="30" rows="10"></textarea><br>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                {% for author in authors_DB %}
+                <tr>
+                    <td>{{author.id}}</td>
+                    <td>{{author.first_name}} {{author.last_name}}</td>
+                    <td> <a href="authors/{{author.id}}">View</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>
