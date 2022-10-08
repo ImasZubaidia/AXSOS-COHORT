@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books &amp; Authors</title>
+    <!-- Bootstrap Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'books_and_authors_app/css/style.css' %}">    
+    <!--<script src="{% static 'gold_dig/js/script.js' %}"></script></head>-->
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Books &amp; Authors</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="card mb-3" style="min-width: 640px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <!--{% load static %}
+                        <img src="{% static "books_and_authors_app/cover.jpg" %}" alt="My image">-->
+                        <img src="https://img.icons8.com/plasticine/2x/book.png" alt="this is a book">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{book.title}}</h5>
+                                <blockquote class="blockquote">{{book.description}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur autem reiciendis aliquam similique quae quisquam, accusamus sint quod excepturi voluptatum vero iusto saepe, ea! Optio, vero sapiente dolor vel. Porro!</blockquote>
+                                <div class="card-text"><small class="text-muted">
+                                    <p>liked by:</p>
+                                </small>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

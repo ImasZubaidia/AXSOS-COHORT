@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books &amp; Authors</title>
+    <!-- Bootstrap Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'fav_books_app/css/style.css' %}">    
+    <!--<script src="{% static 'gold_dig/js/script.js' %}"></script>-->
+    </head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome {{ request.session.first_name }} {{ request.session.last_name }}</h1>
+            <p><a href="/logout">LOGOUT {{ request.session.first_name }}</a></p>
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <div class="row align-items-start">
+            <!--******************FORM***************************-->
+            <div class="col">
+                <h3>Add a Book</h3>
+                <form action="books/add_book" method="post">
+                {% csrf_token %}
+                    <div class="form-group">
+                        <label for="book_title">Title:</label>
+                        <input type="text" class="form-control" name="book_title" placeholder="My Super Neat Book">
+                    </div>
+                    <div class="form-group">
+                        <label for="book_description">Description:</label>
+                        <textarea type="text" class="form-control" name="book_description" placeholder="This will be so great!"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+            </div>
+            <!--******************LIST***************************-->
+            <div class="col">
+            <h3>View a Book</h3>
+                
+                <ul>
+                {% for book in books %}
+                        <li>
+                            <h3><a href="/books/{{book.id}}">{{book.title}}</a></h3>
+                            <p>{{book.fans.count}} fans</p>
+                            <P>added by {{book.fans.first.first_name}} {{book.fans.first.last_name}}</P>
+                        <p>{{book.description}}</p>
+                        </li>
+                {% endfor %}
+                </ul>
+                    
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
