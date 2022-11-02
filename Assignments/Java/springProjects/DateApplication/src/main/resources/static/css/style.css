@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    text-align: center;
+    padding: 125px 50px 75px 100px;
+}
+.home-text {
+    display: inline;
+    text-align: center;
+}
+.link-left {
+	float: left;
+	width: 50%;
+	padding-top: 256px;
+	font-size: large;
+}
+.link-right {
+	float: right;
+	width: 50%;
+	padding-top: 256px;
+	font-size: large;
+}
